@@ -37,16 +37,16 @@ int execute(char *cont, stack_t **aux, unsigned int reader, FILE *fd)
 	bus.arg = strtok(NULL, " \n\t");
 	while (opst[l].opcode && pcd)
 	{
-		if (strcmp(opcd, opst[l].opcode) == 0)
+		if (strcmp(pcd, opst[l].opcode) == 0)
 		{	opst[l].f(aux, reader);
 			return (0);
 		}
 		l++;
 	}
-	if (opcd && opst[l].opcode == NULL)
-	{ fprintf(stderr, "L%d: unknown instruction %s\n", reader, opcd);
-		fclose(fd);
-		free(cont);
+	if (pcd && opst[l].opcode == NULL)
+	{ fprintf(stderr, "L%d: unknown instruction %s\n", reader, pcd);
+		fclose(file);
+		free(content);
 		free_stack(*aux);
 		exit(EXIT_FAILURE); }
 	return (1);
