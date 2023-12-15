@@ -9,6 +9,6 @@
 void mo_stack(stack_t **master, unsigned int reader)
 {
 	(void)master;
-	(void)readeer;
+	(void)reader;
 	bus.lifi = 0;
 }
