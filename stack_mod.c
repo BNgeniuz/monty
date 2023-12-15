@@ -26,7 +26,7 @@ void mo_mod(stack_t **master, unsigned int reader)
 		exit(EXIT_FAILURE);
 	}
 	m = *master;
-	if (h->n == 0)
+	if (m->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", reader);
 		fclose(bus.file);
