@@ -6,7 +6,7 @@
  * @reader: line read
  * Return: 0 (success)
 */
-void mo_push(stack_t **master, unsigned int reader)
+void mo_push(stack_t **master, unsigned int index)
 {
 	int o, p = 0, flag = 0;
 
