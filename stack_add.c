@@ -19,8 +19,8 @@ void mo_add(stack_t **master, unsigned int reader)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", reader);
-		fclose(bus.fd);
-		free(bus.cont);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*master);
 		exit(EXIT_FAILURE);
 	}
