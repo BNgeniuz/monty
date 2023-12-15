@@ -32,7 +32,7 @@ void mo_push(stack_t **master, unsigned int index)
 		exit(EXIT_FAILURE); }
 	o = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode(master, o);
+		add_node(master, o);
 	else
-		addqueue(master, o);
+		add_queue(master, o);
 }
