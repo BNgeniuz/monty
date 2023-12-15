@@ -22,6 +22,6 @@ void mo_rotl(stack_t **master,  __attribute__((unused)) unsigned int reader)
 	}
 	curr->next = *master;
 	(*master)->next = NULL;
-	(*curr)->prev = curr;
+	(*master)->prev = curr;
 	(*master) = stack;
 }
