@@ -6,7 +6,7 @@
  * @reader: read line
  * Return: 0 (success)
 */
-void mo_pall(stack_t **master, unsigned int reader)
+void mo_pall(stack_t **master, unsigned int index)
 {
 	stack_t *m;
 	(void)readeer;
