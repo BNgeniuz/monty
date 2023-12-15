@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		cont = NULL;
 		read_line = getline(&cont, &size, fd);
 		bus.content = cont;
-		readeer++;
+		reader++;
 		if (read_line > 0)
 		{
 			execute(cont, &aux, reader, fd);
