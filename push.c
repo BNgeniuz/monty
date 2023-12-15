@@ -3,7 +3,7 @@
 /**
  * mo_push - push node to the stack
  * @master: head input
- * @reader: line read
+ * @index: line read
  * Return: 0 (success)
 */
 void mo_push(stack_t **master, unsigned int index)
