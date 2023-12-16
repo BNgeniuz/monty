@@ -45,8 +45,8 @@ int execute(char *cont, stack_t **aux, unsigned int reader, FILE *fd)
 	}
 	if (pcd && opst[l].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", reader, pcd);
-		fclose(file);
-		free(content);
+		fclose(fd);
+		free(cont);
 		free_stack(*aux);
 		exit(EXIT_FAILURE); }
 	return (1);
