@@ -3,10 +3,10 @@
 /**
  * mo_push - push node to the stack
  * @master: head input
- * @index: line read
+ * @reader: line read
  * Return: 0 (success)
 */
-void mo_push(stack_t **master, unsigned int index)
+void mo_push(stack_t **master, unsigned int reader)
 {
 	int o, p = 0, flag = 0;
 
